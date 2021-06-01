@@ -39,9 +39,9 @@ const (
 	defaultRecvMessageCapacity = 22020096      // 21MB
 	defaultSendRate            = int64(512000) // 500KB/s
 	defaultRecvRate            = int64(512000) // 500KB/s
-	defaultSendTimeout         = 10 * time.Second
-	defaultPingInterval        = 60 * time.Second
-	defaultPongTimeout         = 45 * time.Second
+	defaultSendTimeout         = 25 * time.Second
+	defaultPingInterval        = 600 * time.Second
+	defaultPongTimeout         = 450 * time.Second
 )
 
 type receiveCbFunc func(chID byte, msgBytes []byte)
